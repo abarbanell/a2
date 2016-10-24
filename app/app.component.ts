@@ -7,10 +7,22 @@ import {FavoriteComponent} from './favorite.component';
     selector: 'my-app',
     template: `
         <h1>My First Angular 2 App</h1>
-        <favorite></favorite>
+        <favorite 
+            [isFavorite]="post.isFavorite" 
+            (change)="onFavoriteChange($event)">
+        </favorite>
         <courses></courses>
         <authors></authors>
     `,
     directives: [CoursesComponent, AuthorsComponent, FavoriteComponent]
 })
-export class AppComponent { }
+export class AppComponent { 
+    post = {
+        title: "Title",
+        isFavorite: true
+    }
+
+    onFavoriteChange($event){
+        console.log($event);
+    }
+}
