@@ -11,6 +11,10 @@ import {FavoriteComponent} from './favorite.component';
             [isFavorite]="post.isFavorite" 
             (change)="onFavoriteChange($event)">
         </favorite>
+        <favorite 
+            [isFavorite]="post.isFavorite" 
+            (change)="onFavoriteChange($event)">
+        </favorite>
         <courses></courses>
         <authors></authors>
     `,
