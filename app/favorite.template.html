@@ -1,7 +1,7 @@
 
 <i 
-            class="glyphicon"
-            [class.glyphicon-star-empty]="!isFavorite"
-            [class.glyphicon-star]="isFavorite"
+            class="glyphicon glyphicon-heart"
+            [class.highlighted]="isFavorite"
             (click)="onClick()">
         </i>
+        <span> {{ favCount }} </span>

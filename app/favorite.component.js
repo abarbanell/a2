@@ -21,16 +21,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             FavoriteComponent = (function () {
                 function FavoriteComponent() {
                     this.isFavorite = false;
+                    this.favCount = 0;
                     this.change = new core_1.EventEmitter();
                 }
                 FavoriteComponent.prototype.onClick = function () {
+                    if (this.isFavorite) {
+                        this.favCount--;
+                    }
+                    else {
+                        this.favCount++;
+                    }
                     this.isFavorite = !this.isFavorite;
-                    this.change.emit({ newValue: this.isFavorite });
+                    this.change.emit({ newValue: this.isFavorite, newCount: this.favCount });
                 };
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', Object)
                 ], FavoriteComponent.prototype, "isFavorite", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FavoriteComponent.prototype, "favCount", void 0);
                 __decorate([
                     core_1.Output(), 
                     __metadata('design:type', Object)
@@ -39,8 +50,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'favorite',
                         templateUrl: 'app/favorite.template.html',
-                        styles: [
-                            ".glyphicon-star { color: orange; } "
+                        styles: ["\n        .glyphicon-heart { color: #ccc; cursor: pointer; }\n        .highlighted { color: deeppink; } \n        "
                         ]
                     }), 
                     __metadata('design:paramtypes', [])

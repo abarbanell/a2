@@ -9,10 +9,7 @@ import {FavoriteComponent} from './favorite.component';
         <h1>My First Angular 2 App</h1>
         <favorite 
             [isFavorite]="post.isFavorite" 
-            (change)="onFavoriteChange($event)">
-        </favorite>
-        <favorite 
-            [isFavorite]="post.isFavorite" 
+            [favCount]="post.favCount"
             (change)="onFavoriteChange($event)">
         </favorite>
         <courses></courses>
@@ -23,7 +20,8 @@ import {FavoriteComponent} from './favorite.component';
 export class AppComponent { 
     post = {
         title: "Title",
-        isFavorite: true
+        isFavorite: false,
+        favCount:  10
     }
 
     onFavoriteChange($event){
