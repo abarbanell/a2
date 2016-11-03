@@ -4,12 +4,23 @@ import {AuthorsComponent} from './authors.component';
 import {FavoriteComponent} from './favorite.component';
 import {VoteComponent} from './vote.component';
 import {TweetsComponent} from './tweets.component';
+import {ZippyComponent} from './zippy.component';
 
 
 @Component({
     selector: 'my-app',
     template: `
         <h1>Udemy course Angular 2 App</h1>
+        <h2> Zippy component</h2>
+        <zippy>
+            <div class="heading">Who can see my stuff?</div>
+            <div class="body">People who can see my stuff</div>
+        </zippy>
+        <zippy>
+            <div class="heading">Who can contact me?</div>
+            <div class="body">Some people.</div>
+            <div class="body">More people.</div>
+        </zippy>
         <tweets></tweets>
         <vote
                 [voteCount]="post.votecount"
@@ -31,7 +42,8 @@ import {TweetsComponent} from './tweets.component';
             AuthorsComponent, 
             FavoriteComponent, 
             VoteComponent, 
-            TweetsComponent
+            TweetsComponent,
+            ZippyComponent
         ]
 })
 export class AppComponent { 
