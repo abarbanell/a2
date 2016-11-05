@@ -1,0 +1,46 @@
+<form>
+	<div class="form-group">
+        <label for="firstname">First Name</label>
+        <input 
+            id="firstname" 
+            ngControl="firstname" 
+            #firstname="ngForm"  
+            required 
+            minlength="3"
+            type="text" 
+            class="form-control">
+            <div class="alert alert-danger" *ngIf="firstname.touched && firstname.errors">
+                <div 
+                    *ngIf="firstname.errors.required">
+                    First name is required.
+                </div>
+                <div 
+                    *ngIf="firstname.errors.minlength">
+                    First name should be minum {{ firstname.errors.minlength.requiredLength }} characters.
+                </div>
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea 
+            #comment="ngForm" 
+            ngControl="comment" 
+            required minlength="6"
+            id="comment" 
+            cols="30" 
+            rows="10" 
+            class="form-control">
+        </textarea>
+            <div class="alert alert-danger" *ngIf="comment.touched && comment.errors">
+                <div 
+                    *ngIf="comment.errors.required">
+                    Comment is required.
+                </div>
+                <div 
+                    *ngIf="comment.errors.minlength">
+                    Comment should be minum {{ comment.errors.minlength.requiredLength }} characters.
+                </div>
+            </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
