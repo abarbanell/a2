@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './favorite.component', './vote.component', './tweets.component', './zippy.component', './contact-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './favorite.component', './vote.component', './tweets.component', './zippy.component', './contact-form.component', './email-form.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, favorite_component_1, vote_component_1, tweets_component_1, zippy_component_1, contact_form_component_1;
+    var core_1, courses_component_1, authors_component_1, favorite_component_1, vote_component_1, tweets_component_1, zippy_component_1, contact_form_component_1, email_form_component_1;
     var AppComponent;
     return {
         setters:[
@@ -37,6 +37,9 @@ System.register(['angular2/core', './courses.component', './authors.component', 
             },
             function (contact_form_component_1_1) {
                 contact_form_component_1 = contact_form_component_1_1;
+            },
+            function (email_form_component_1_1) {
+                email_form_component_1 = email_form_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -58,7 +61,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    ",
+                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Email Form Component</h2>\n        <email-form></email-form>\n\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    ",
                         directives: [
                             courses_component_1.CoursesComponent,
                             authors_component_1.AuthorsComponent,
@@ -66,7 +69,8 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                             vote_component_1.VoteComponent,
                             tweets_component_1.TweetsComponent,
                             zippy_component_1.ZippyComponent,
-                            contact_form_component_1.ContactFormComponent
+                            contact_form_component_1.ContactFormComponent,
+                            email_form_component_1.EmailFormComponent
                         ]
                     }), 
                     __metadata('design:paramtypes', [])

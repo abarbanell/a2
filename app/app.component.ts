@@ -6,12 +6,16 @@ import {VoteComponent} from './vote.component';
 import {TweetsComponent} from './tweets.component';
 import {ZippyComponent} from './zippy.component';
 import {ContactFormComponent} from './contact-form.component'
+import {EmailFormComponent} from './email-form.component'
 
 @Component({
     selector: 'my-app',
     template: `
         <div class="container">
         <h1>Udemy course Angular 2 App</h1>
+        <h2> Email Form Component</h2>
+        <email-form></email-form>
+
         <h2> Contact Form Component</h2>
         <contact-form></contact-form>
 
@@ -49,7 +53,8 @@ import {ContactFormComponent} from './contact-form.component'
             VoteComponent, 
             TweetsComponent,
             ZippyComponent,
-            ContactFormComponent
+            ContactFormComponent,
+            EmailFormComponent
         ]
 })
 export class AppComponent { 

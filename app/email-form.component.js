@@ -11,30 +11,30 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ContactFormComponent;
+    var EmailFormComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ContactFormComponent = (function () {
-                function ContactFormComponent() {
+            EmailFormComponent = (function () {
+                function EmailFormComponent() {
                 }
-                ContactFormComponent.prototype.onSubmit = function (x) {
+                EmailFormComponent.prototype.onSubmit = function (x) {
                     console.log(x);
                 };
-                ContactFormComponent = __decorate([
+                EmailFormComponent = __decorate([
                     core_1.Component({
-                        selector: 'contact-form',
-                        templateUrl: 'app/contact-form.component.html'
+                        selector: 'email-form',
+                        templateUrl: 'app/email-form.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], ContactFormComponent);
-                return ContactFormComponent;
+                ], EmailFormComponent);
+                return EmailFormComponent;
             }());
-            exports_1("ContactFormComponent", ContactFormComponent);
+            exports_1("EmailFormComponent", EmailFormComponent);
         }
     }
 });
-//# sourceMappingURL=contact-form.component.js.map
+//# sourceMappingURL=email-form.component.js.map
