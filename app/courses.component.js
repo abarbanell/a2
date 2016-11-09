@@ -1,4 +1,4 @@
-System.register(['angular2/core', './course.service'], function(exports_1, context_1) {
+System.register(['@angular/core', './course.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -30,7 +30,7 @@ System.register(['angular2/core', './course.service'], function(exports_1, conte
                 CoursesComponent = __decorate([
                     core_1.Component({
                         selector: 'courses',
-                        template: "\n        <h2>Courses</h2>\n        {{ title }}\n        <ul>\n            <li *ngFor=\"#course of courses\">\n                {{ course }} \n            </li>\n        </ul>\n        ",
+                        template: "\n        <h2>Courses</h2>\n        {{ title }}\n        <ul>\n            <li *ngFor=\"let course of courses\">\n                {{ course }} \n            </li>\n        </ul>\n        ",
                         providers: [course_service_1.CourseService]
                     }), 
                     __metadata('design:paramtypes', [course_service_1.CourseService])

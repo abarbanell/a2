@@ -3,8 +3,8 @@
         <label for="firstname">First Name</label>
         <input 
             id="firstname" 
-            ngControl="firstname" 
-            #firstname="ngForm"  
+            ngModel name="firstname" 
+            #firstname="ngModel"  
             required 
             minlength="3"
             type="text" 
@@ -23,8 +23,8 @@
     <div class="form-group">
         <label for="comment">Comment</label>
         <textarea 
-            #comment="ngForm" 
-            ngControl="comment" 
+            #comment="ngModel" 
+            ngModel name="comment" 
             required minlength="6"
             id="comment" 
             cols="30" 

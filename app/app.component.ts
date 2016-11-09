@@ -1,12 +1,13 @@
-import {Component} from 'angular2/core';
-import {CoursesComponent} from './courses.component';
-import {AuthorsComponent} from './authors.component';
-import {FavoriteComponent} from './favorite.component';
-import {VoteComponent} from './vote.component';
-import {TweetsComponent} from './tweets.component';
-import {ZippyComponent} from './zippy.component';
-import {ContactFormComponent} from './contact-form.component'
-import {EmailFormComponent} from './email-form.component'
+import {Component} from '@angular/core';
+
+// import {CoursesComponent} from './courses.component';
+// import {AuthorsComponent} from './authors.component';
+// import {FavoriteComponent} from './favorite.component';
+// import {VoteComponent} from './vote.component';
+// import {TweetsComponent} from './tweets.component';
+// import {ZippyComponent} from './zippy.component';
+// import {ContactFormComponent} from './contact-form.component'
+// import {EmailFormComponent} from './email-form.component'
 
 @Component({
     selector: 'my-app',
@@ -45,17 +46,7 @@ import {EmailFormComponent} from './email-form.component'
         <courses></courses>
         <authors></authors>
         </div> 
-    `,
-    directives: [
-            CoursesComponent, 
-            AuthorsComponent, 
-            FavoriteComponent, 
-            VoteComponent, 
-            TweetsComponent,
-            ZippyComponent,
-            ContactFormComponent,
-            EmailFormComponent
-        ]
+    `
 })
 export class AppComponent { 
     post = {

@@ -3,8 +3,8 @@
         <label for="name">Name</label>
         <input 
             id="name" 
-            ngControl="name" 
-            #name="ngForm"
+            ngModel name="name" 
+            #name="ngModel"
             required 
             minlength="3"
             type="text" 
@@ -24,8 +24,8 @@
         <label for="name">email</label>
         <input 
             id="email" 
-            ngControl="email" 
-            #email="ngForm"
+            ngModel name="email" 
+            #email="ngModel"
             required 
             minlength="3"
             type="text" 
@@ -45,8 +45,8 @@
         <label for="freq">Frequency of email</label>
         <select 
             id="freq"
-            ngControl="freq"
-            #freq="ngForm"
+            ngModel name="freq"
+            #freq="ngModel"
             name="freq"
             required
             class="form-control">

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './favorite.component', './vote.component', './tweets.component', './zippy.component', './contact-form.component', './email-form.component'], function(exports_1, context_1) {
+System.register(['@angular/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,38 +10,22 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, favorite_component_1, vote_component_1, tweets_component_1, zippy_component_1, contact_form_component_1, email_form_component_1;
+    var core_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (courses_component_1_1) {
-                courses_component_1 = courses_component_1_1;
-            },
-            function (authors_component_1_1) {
-                authors_component_1 = authors_component_1_1;
-            },
-            function (favorite_component_1_1) {
-                favorite_component_1 = favorite_component_1_1;
-            },
-            function (vote_component_1_1) {
-                vote_component_1 = vote_component_1_1;
-            },
-            function (tweets_component_1_1) {
-                tweets_component_1 = tweets_component_1_1;
-            },
-            function (zippy_component_1_1) {
-                zippy_component_1 = zippy_component_1_1;
-            },
-            function (contact_form_component_1_1) {
-                contact_form_component_1 = contact_form_component_1_1;
-            },
-            function (email_form_component_1_1) {
-                email_form_component_1 = email_form_component_1_1;
             }],
         execute: function() {
+            // import {CoursesComponent} from './courses.component';
+            // import {AuthorsComponent} from './authors.component';
+            // import {FavoriteComponent} from './favorite.component';
+            // import {VoteComponent} from './vote.component';
+            // import {TweetsComponent} from './tweets.component';
+            // import {ZippyComponent} from './zippy.component';
+            // import {ContactFormComponent} from './contact-form.component'
+            // import {EmailFormComponent} from './email-form.component'
             AppComponent = (function () {
                 function AppComponent() {
                     this.post = {
@@ -61,17 +45,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Email Form Component</h2>\n        <email-form></email-form>\n\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    ",
-                        directives: [
-                            courses_component_1.CoursesComponent,
-                            authors_component_1.AuthorsComponent,
-                            favorite_component_1.FavoriteComponent,
-                            vote_component_1.VoteComponent,
-                            tweets_component_1.TweetsComponent,
-                            zippy_component_1.ZippyComponent,
-                            contact_form_component_1.ContactFormComponent,
-                            email_form_component_1.EmailFormComponent
-                        ]
+                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Email Form Component</h2>\n        <email-form></email-form>\n\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

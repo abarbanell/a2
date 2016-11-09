@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core'
+import {Component} from '@angular/core'
 import {Tweet, TweetService} from './tweet.service'
 import {FavoriteComponent} from './favorite.component'
   
@@ -6,7 +6,7 @@ import {FavoriteComponent} from './favorite.component'
     selector: 'tweets',
     template: `
         <h2>Tweets</h2>
-                <div *ngFor="#tweet of tweets" class="media">
+                <div *ngFor="let tweet of tweets" class="media">
                     <a class="media-left" href="#">
                         <img class="media-object" src="{{ tweet.image }}" alt="Generic placeholder image">
                     </a>
@@ -18,8 +18,7 @@ import {FavoriteComponent} from './favorite.component'
                 </div>  
 
         `,
-        providers: [TweetService],
-        directives: [FavoriteComponent]
+        providers: [TweetService]
 })
 export class TweetsComponent {
     tweets: Tweet[];

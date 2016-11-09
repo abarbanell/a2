@@ -1,4 +1,4 @@
-System.register(['angular2/core', './tweet.service', './favorite.component'], function(exports_1, context_1) {
+System.register(['@angular/core', './tweet.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './tweet.service', './favorite.component'], fu
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tweet_service_1, favorite_component_1;
+    var core_1, tweet_service_1;
     var TweetsComponent;
     return {
         setters:[
@@ -19,9 +19,6 @@ System.register(['angular2/core', './tweet.service', './favorite.component'], fu
             },
             function (tweet_service_1_1) {
                 tweet_service_1 = tweet_service_1_1;
-            },
-            function (favorite_component_1_1) {
-                favorite_component_1 = favorite_component_1_1;
             }],
         execute: function() {
             TweetsComponent = (function () {
@@ -32,9 +29,8 @@ System.register(['angular2/core', './tweet.service', './favorite.component'], fu
                 TweetsComponent = __decorate([
                     core_1.Component({
                         selector: 'tweets',
-                        template: "\n        <h2>Tweets</h2>\n                <div *ngFor=\"#tweet of tweets\" class=\"media\">\n                    <a class=\"media-left\" href=\"#\">\n                        <img class=\"media-object\" src=\"{{ tweet.image }}\" alt=\"Generic placeholder image\">\n                    </a>\n                    <div class=\"media-body\">\n                        <h4 class=\"media-heading\">{{ tweet.title }}</h4>\n                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n                        <span><favorite></favorite></span>\n                    </div>\n                </div>  \n\n        ",
-                        providers: [tweet_service_1.TweetService],
-                        directives: [favorite_component_1.FavoriteComponent]
+                        template: "\n        <h2>Tweets</h2>\n                <div *ngFor=\"let tweet of tweets\" class=\"media\">\n                    <a class=\"media-left\" href=\"#\">\n                        <img class=\"media-object\" src=\"{{ tweet.image }}\" alt=\"Generic placeholder image\">\n                    </a>\n                    <div class=\"media-body\">\n                        <h4 class=\"media-heading\">{{ tweet.title }}</h4>\n                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n                        <span><favorite></favorite></span>\n                    </div>\n                </div>  \n\n        ",
+                        providers: [tweet_service_1.TweetService]
                     }), 
                     __metadata('design:paramtypes', [tweet_service_1.TweetService])
                 ], TweetsComponent);

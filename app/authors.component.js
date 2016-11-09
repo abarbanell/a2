@@ -1,4 +1,4 @@
-System.register(['angular2/core', './author.service'], function(exports_1, context_1) {
+System.register(['@angular/core', './author.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -29,7 +29,7 @@ System.register(['angular2/core', './author.service'], function(exports_1, conte
                 AuthorsComponent = __decorate([
                     core_1.Component({
                         selector: "authors",
-                        template: "\n        <h2> Authors </h2>\n        <ol>\n            <li *ngFor=\"#author of authors\">\n                {{ author }}\n            </li>\n        </ol>\n        ",
+                        template: "\n        <h2> Authors </h2>\n        <ol>\n            <li *ngFor=\"let author of authors\">\n                {{ author }}\n            </li>\n        </ol>\n        ",
                         providers: [author_service_1.AuthorService]
                     }), 
                     __metadata('design:paramtypes', [author_service_1.AuthorService])

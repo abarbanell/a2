@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core'
+import {Component} from '@angular/core'
 import {CourseService} from './course.service'
  
 @Component({
@@ -7,7 +7,7 @@ import {CourseService} from './course.service'
         <h2>Courses</h2>
         {{ title }}
         <ul>
-            <li *ngFor="#course of courses">
+            <li *ngFor="let course of courses">
                 {{ course }} 
             </li>
         </ul>
