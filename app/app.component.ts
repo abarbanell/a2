@@ -14,6 +14,8 @@ import {Component} from '@angular/core';
     template: `
         <div class="container">
         <h1>Udemy course Angular 2 App</h1>
+        <h2> Signup Form </h2>
+        <signup-form></signup-form>
         <h2> Email Form Component</h2>
         <email-form></email-form>
 
