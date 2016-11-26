@@ -18,14 +18,6 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            // import {CoursesComponent} from './courses.component';
-            // import {AuthorsComponent} from './authors.component';
-            // import {FavoriteComponent} from './favorite.component';
-            // import {VoteComponent} from './vote.component';
-            // import {TweetsComponent} from './tweets.component';
-            // import {ZippyComponent} from './zippy.component';
-            // import {ContactFormComponent} from './contact-form.component'
-            // import {EmailFormComponent} from './email-form.component'
             AppComponent = (function () {
                 function AppComponent() {
                     this.post = {
@@ -45,7 +37,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Signup Form </h2>\n        <signup-form></signup-form>\n        <h2> Email Form Component</h2>\n        <email-form></email-form>\n\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    "
+                        template: "\n        <div class=\"container\">\n        <h1>Udemy course Angular 2 App</h1>\n        <h2> Password change form </h2>\n        <password-change></password-change>\n        <h2> Signup Form </h2>\n        <signup-form></signup-form>\n        <h2> Email Form Component</h2>\n        <email-form></email-form>\n\n        <h2> Contact Form Component</h2>\n        <contact-form></contact-form>\n\n        <h2> Zippy component</h2>\n        <zippy>\n            <div class=\"heading\">Who can see my stuff?</div>\n            <div class=\"body\">People who can see my stuff</div>\n        </zippy>\n        <zippy>\n            <div class=\"heading\">Who can contact me?</div>\n            <div class=\"body\">Some people.</div>\n            <div class=\"body\">More people.</div>\n        </zippy>\n        <tweets></tweets>\n        <vote\n                [voteCount]=\"post.votecount\"\n                [myvote]=\"post.myvote\"\n                (vote)=\"(onVote($event))\"\n            >\n        </vote>\n        <h2>Favorite component</h2>\n        <favorite \n            [isFavorite]=\"post.isFavorite\" \n            [favCount]=\"post.favCount\"\n            (change)=\"onFavoriteChange($event)\">\n        </favorite>\n        <courses></courses>\n        <authors></authors>\n        </div> \n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

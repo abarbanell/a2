@@ -1,19 +1,12 @@
 import {Component} from '@angular/core';
 
-// import {CoursesComponent} from './courses.component';
-// import {AuthorsComponent} from './authors.component';
-// import {FavoriteComponent} from './favorite.component';
-// import {VoteComponent} from './vote.component';
-// import {TweetsComponent} from './tweets.component';
-// import {ZippyComponent} from './zippy.component';
-// import {ContactFormComponent} from './contact-form.component'
-// import {EmailFormComponent} from './email-form.component'
-
 @Component({
     selector: 'my-app',
     template: `
         <div class="container">
         <h1>Udemy course Angular 2 App</h1>
+        <h2> Password change form </h2>
+        <password-change></password-change>
         <h2> Signup Form </h2>
         <signup-form></signup-form>
         <h2> Email Form Component</h2>

@@ -12,6 +12,7 @@ import {ZippyComponent} from './zippy.component';
 import {ContactFormComponent} from './contact-form.component';
 import {EmailFormComponent} from './email-form.component';
 import {SignupFormComponent} from './signup-form.component';
+import {PasswordChangeComponent} from './password-change.component';
 
 @NgModule({
   imports:      [ 
@@ -29,7 +30,8 @@ import {SignupFormComponent} from './signup-form.component';
     ZippyComponent, 
     ContactFormComponent, 
     EmailFormComponent,
-    SignupFormComponent  
+    SignupFormComponent,
+    PasswordChangeComponent  
   ],
   bootstrap:    [ 
     AppComponent

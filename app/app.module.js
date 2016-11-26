@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', "@angular/forms", './app.component', './courses.component', './authors.component', './favorite.component', './vote.component', './tweets.component', './zippy.component', './contact-form.component', './email-form.component', './signup-form.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', "@angular/forms", './app.component', './courses.component', './authors.component', './favorite.component', './vote.component', './tweets.component', './zippy.component', './contact-form.component', './email-form.component', './signup-form.component', './password-change.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', "@angular/forms",
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, forms_1, app_component_1, courses_component_1, authors_component_1, favorite_component_1, vote_component_1, tweets_component_1, zippy_component_1, contact_form_component_1, email_form_component_1, signup_form_component_1;
+    var core_1, platform_browser_1, forms_1, app_component_1, courses_component_1, authors_component_1, favorite_component_1, vote_component_1, tweets_component_1, zippy_component_1, contact_form_component_1, email_form_component_1, signup_form_component_1, password_change_component_1;
     var AppModule;
     return {
         setters:[
@@ -52,6 +52,9 @@ System.register(['@angular/core', '@angular/platform-browser', "@angular/forms",
             },
             function (signup_form_component_1_1) {
                 signup_form_component_1 = signup_form_component_1_1;
+            },
+            function (password_change_component_1_1) {
+                password_change_component_1 = password_change_component_1_1;
             }],
         execute: function() {
             AppModule = (function () {
@@ -74,7 +77,8 @@ System.register(['@angular/core', '@angular/platform-browser', "@angular/forms",
                             zippy_component_1.ZippyComponent,
                             contact_form_component_1.ContactFormComponent,
                             email_form_component_1.EmailFormComponent,
-                            signup_form_component_1.SignupFormComponent
+                            signup_form_component_1.SignupFormComponent,
+                            password_change_component_1.PasswordChangeComponent
                         ],
                         bootstrap: [
                             app_component_1.AppComponent
